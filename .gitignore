@@ -1,0 +1,23 @@
+# Global .gitignore para projeto com backend e frontend
+
+# Node.js
+**/node_modules/
+**/dist/
+**/build/
+.env
+.env.local
+
+# Vite
+frontend/.vite/
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
