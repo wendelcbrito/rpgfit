@@ -30,3 +30,15 @@ exports.register = async (req, res) => {
         res.status(500).json({ error: err.message});
     }
  };
+
+ exports.getProfile = async (req, res) => {
+    try {
+        const user = await User.findById(req.userId).select('username xp level');
+        if (!user) {
+            return res.status(404).json({ error: 'Usuário não encontrado'});
+        }
+        res.json(user);
+    } catch (err) {
+        res.status(500).json({ error: 'Erro ao buscar perfil do usuário'});
+    }
+ };

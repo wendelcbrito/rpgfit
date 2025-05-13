@@ -1,0 +1,31 @@
+.user-stats {
+  display: flex;
+  align-items: center;
+  background: #272b30;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.avatar-placeholder {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.stats-info {
+  flex: 1;
+}
+
+.xp-bar-container {
+  background: #555;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.xp-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+}
